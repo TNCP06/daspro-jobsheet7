@@ -6,6 +6,7 @@ public class ForKelipatan27 {
 
         int kelipatan;
         int total=0, counter=0;
+        double avg;
 
         System.out.print("Masukkan bilangan kelipatan (1-9): ");
         kelipatan = scan.nextInt();
@@ -17,8 +18,11 @@ public class ForKelipatan27 {
             }
         }
 
+        avg = (double) total/counter;
+
         System.out.printf("Banyaknya bilangan %d dari 1 sampai 50 adalah %d\n", kelipatan, counter);
         System.out.printf("Total bilangan kelipatan %d dari 1 sampai 50 adalah %d\n", kelipatan, total);
+        System.out.printf("Rata-rata dari total bilangan kelipatan %d dari 1 sampai 50 adalah %f",kelipatan,avg);
 
         scan.close();
     }
